@@ -1,16 +1,12 @@
-# tye application configuration file
-# read all about it att
-#
-# when you've given us a try, we'd love to know what you think:
-#    https://aka.ms/AA7q20u
-#
 name: clean-architecture
 services:
 - name: api-books
+  replicas: 2
   project: src/Presentation/CleanArchitecture.Api.Books/CleanArchitecture.Api.Books.csproj
   bindings:
   - port: 5000
 - name: api-shops
+  replicas: 2
   project: src/Presentation/CleanArchitecture.Api.Shops/CleanArchitecture.Api.Shops.csproj
   bindings:
   - port: 5100
