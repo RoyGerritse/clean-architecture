@@ -8,7 +8,11 @@ name: clean-architecture
 services:
 - name: api-books
   project: src/Presentation/CleanArchitecture.Api.Books/CleanArchitecture.Api.Books.csproj
+  bindings:
+  - port: 5000
 - name: api-shops
   project: src/Presentation/CleanArchitecture.Api.Shops/CleanArchitecture.Api.Shops.csproj
+  bindings:
+  - port: 5100
 - name: worker-email
   project: src/Presentation/CleanArchitecture.Worker.Email/CleanArchitecture.Worker.Email.csproj
