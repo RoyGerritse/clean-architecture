@@ -34,8 +34,8 @@ This layer is responsible to implement the Contracts (Interfaces/Adapters) defin
 Infrastructure layer contains most of your application’s dependencies on external resources such as file systems, web services, third party APIs, and so on. The implementation of services should be based on interfaces defined within the application layer.
 If you have a very large project with many dependencies, it may make sense to have multiple Infrastructure projects, but for most projects one Infrastructure project with folders works fine.
 - Infrastructure.Persistence
--- Infrastructure.Persistence.MySQL
--- Infrastructure.Persistence.MongoDB
+  - Infrastructure.Persistence.MySQL
+  - Infrastructure.Persistence.MongoDB
 - Infrastructure.Identity
 
 Infrastructure layer contains:
@@ -46,5 +46,5 @@ Infrastructure layer contains:
 - Payment Services
 - Third-party Services
 - Notifications
--- Email Service
--- Sms Service
+  - Email Service
+  - Sms Service
