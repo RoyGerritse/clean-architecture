@@ -1,3 +1,5 @@
+![Onion layers](assets/clean-architecture-onion.png)
+
 # Domain
 Domain Layer implements the core, use-case independent business logic of the domain/system. By design, this layer is highly abstracted and stable. This layer contains a considerable amount of domain entities and should not depend on external libraries and frameworks. Ideally it should be loosely coupled even to the .NET Framework.
 Domain project is core and backbone project. It is the heart and center project of the Clean Architecture design. All other projects should be depended on the Domain project.
@@ -68,5 +70,6 @@ User Interface layer contains:
 - Filters/Attributes
 - Web/API Utilities
 
+![Onion layers](assets/clean-architecture-layers.png)
 
 [Source Ashish Patel](https://medium.com/dotnet-hub/clean-architecture-with-dotnet-and-dotnet-core-aspnetcore-overview-introduction-getting-started-ec922e53bb97) 
