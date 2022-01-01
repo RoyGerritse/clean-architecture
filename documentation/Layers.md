@@ -69,3 +69,6 @@ User Interface layer contains:
 - Middlewares
 - Filters/Attributes
 - Web/API Utilities
+
+
+[Source Ashish Patel](https://medium.com/dotnet-hub/clean-architecture-with-dotnet-and-dotnet-core-aspnetcore-overview-introduction-getting-started-ec922e53bb97) 
