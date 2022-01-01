@@ -1,0 +1,14 @@
+# tye application configuration file
+# read all about it att
+#
+# when you've given us a try, we'd love to know what you think:
+#    https://aka.ms/AA7q20u
+#
+name: clean-architecture
+services:
+- name: api-books
+  project: src/Presentation/CleanArchitecture.Api.Books/CleanArchitecture.Api.Books.csproj
+- name: api-shops
+  project: src/Presentation/CleanArchitecture.Api.Shops/CleanArchitecture.Api.Shops.csproj
+- name: worker-email
+  project: src/Presentation/CleanArchitecture.Worker.Email/CleanArchitecture.Worker.Email.csproj

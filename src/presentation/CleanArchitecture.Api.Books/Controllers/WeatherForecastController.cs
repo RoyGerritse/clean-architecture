@@ -14,6 +14,7 @@ public class WeatherForecastController : ControllerBase
         "Cool", 
         "Mild", 
         "Warm", 
+        
         "Balmy", "Hot", "Sweltering", "Scorching"
     };
 
