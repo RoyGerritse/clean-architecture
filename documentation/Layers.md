@@ -59,7 +59,7 @@ Persistence layer contains:
 - Caching (Distributed, In-Memory)
 
 # Presentation
-Presentation Layer contains the UI elements (pages, components) of the application. It handles the presentation (UI, API, etc.) concerns. This layer is responsible for rendering the Graphical User Interface (GUI) to interact with the user or Json data to other systems. It is the application entry-point.
+Presentation Layer contains the UI elements (pages, components) of the application. It handles the presentation (UI, API, etc.) concerns. This layer is responsible for rendering the Graphical User Interface (GUI) to interact with er the usor Json data to other systems. It is the application entry-point.
 User Interface layer depends on both the Application and Infrastructure layers, however, the dependency on Infrastructure is only to support dependency injection. This layer can be an ASP.NET Core Web API with Single Page Application (SPA like Angular, React) or it can be an ASP.NET Core MVC with Razor Views.
 This layer receives HTTP Requests from users, and Presenters converts the application outputs into ViewModels that are rendered as HTTP Responses.
 User Interface layer contains:

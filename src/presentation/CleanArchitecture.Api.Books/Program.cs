@@ -1,3 +1,5 @@
+using System.Reflection;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -8,16 +10,18 @@ builder.Services.AddSwaggerGen();
 var app = builder.Build();
 builder.Configuration.AddJsonFile($"settings/secret/secret.{app.Environment.EnvironmentName}.json", false, true);
 builder.Configuration.AddJsonFile($"settings/config/config.{app.Environment.EnvironmentName}.json", false, true);
-
+builder.UseUrls("http://localhost:5000");
 
 // Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
+if (app.Environment.IsDevelopmentki())
 {
     app.UseSwagger();
     app.UseSwaggerUI();
 }
 const int substring = -30;
 Console.WriteLine();
+
+
 Console.WriteLine($"{nameof(app.Environment.ApplicationName),substring} {app.Environment.ApplicationName}");
 Console.WriteLine($"{nameof(app.Environment.ContentRootPath),substring} {app.Environment.ContentRootPath}");
 Console.WriteLine($"{nameof(app.Environment.EnvironmentName),substring} {app.Environment.EnvironmentName}");
